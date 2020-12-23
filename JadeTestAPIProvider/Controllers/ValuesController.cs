@@ -18,6 +18,10 @@ namespace JadeTestAPIProvider.Controllers
         // GET api/values/5
         public string Get(int id)
         {
+            if (id == 69)
+            {
+                return $"value: {id}, but you're a pervert, Andrew.";
+            }
             return $"value: {id}";
         }
 
